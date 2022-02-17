@@ -1,0 +1,213 @@
+* {
+    letter-spacing: 0.3;
+}
+:root {
+    /* colors */
+    --white: #f8f9fa;
+    --dark-white: #e9ecef;
+    --gray: #adb5bd;
+    --light-dark: #495057;
+    --dark: #343a40;
+    --black: #212529;
+}
+
+body {
+    background-color: var(--white);
+}
+.title-section {
+    font-size: 3em;
+    margin-bottom: 60px;
+}
+
+/* Hero */
+.hero > .row {
+    height: 86vh;
+}
+.hero-col {
+    margin-bottom: 5em;
+}
+.name {
+    font-size: 4em;
+}
+.title {
+    color: var(--light-dark);
+}
+
+
+/* About Me */
+.about-me > .row {
+    height: 100vh;
+}
+.about-me-content > h2 {
+    font-size: 3em;
+}
+.about-me-content > p {
+    font-size: 1.35em;
+    font-weight: 400;
+    color: var(--light-dark);
+    text-align: justify;
+}
+.garis-hero {
+    display: none;
+}
+.dots {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    right: 1%;
+    top: 45%;
+}
+@media(max-width: 768px) {
+    .about-me {
+        padding: 50px 0;
+    }
+    .about-me-content > p {
+        text-align: center;
+    }
+    .garis-hero {
+        display: block;
+    }
+    .dots {
+        display: none;
+    }
+}
+
+/* Education Timeline */
+.edu {
+    min-height: 100vh;
+    padding: 50px 15px;
+}
+.edu h2 {
+    font-size: 3em;
+    margin-bottom: 60px;
+}
+.timeline-items {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--dark);
+    left: 50%;
+    margin-top: 6px;
+}
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--dark);
+    position: absolute;
+    left: calc(50% - 7px);
+    border-radius: 50%;
+    margin-top: 6px;
+}
+.timeline-date {
+    font-size: 18px;
+    color: var(--light-dark);
+    font-weight: bold;
+    margin: 0 10px 15px ;
+}
+.timeline-content {
+    background-color: var(--dark-white);
+    padding: 30px;
+    border-radius: 10px;
+}
+.timeline-content h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.timeline-content p {
+    color: var(--light-dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* responsive timeline */
+@media(max-width: 768px) {
+    .timeline-items::before {
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+    .timeline-dot {
+        left: 0;
+    }
+}
+
+/* project */
+.project {
+    min-height: 100vh;
+    padding: 50px 15px;
+}
+.card {
+    border-radius: 10px !important;
+}
+
+/* Footer */
+
+.footer-list {
+    padding-left: 0 !important;
+}
+.copyright,
+.footer-social {
+    color: var(--white);
+}
+.footer-social {
+    font-size: 22px;
+    transition: .3s;
+}
+.footer-social:hover {
+    color: var(--gray);
+    transition: .3s;
+}
+.copyright {
+    font-size: 20px;
+}
+
+/* ============================= LOGIN PAGE ================================ */
+.login > .row {
+    height: 100vh;
+}
+.login-card {
+    padding: 80px 50px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* ============================= EDIT PAGE ================================ */
+.hero-edit, .edu-edit, .project-edit {
+    margin-top: 60px;
+}
+.form-update {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+}
