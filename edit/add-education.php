@@ -47,15 +47,15 @@ if (isset($_POST["submit"])) {
                     <h2 class="text-center mb-5">Education Section</h2>
                     <form action="" method="POST">
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="tahun" name="tahun" placeholder="Adrian">
+                            <input type="text" class="form-control" id="tahun" name="tahun" placeholder="Adrian" required>
                             <label for="tahun">Tahun</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="title">
+                            <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="title" required>
                             <label for="tingkat">Tingkat</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <textarea class="form-control" placeholder="Description" id="deskripsi" name="deskripsi"></textarea>
+                            <textarea class="form-control" placeholder="Description" id="deskripsi" name="deskripsi" required></textarea>
                             <label for="deskripsi">Deskripsi</label>
                         </div>
                         <div class="col mb-4">

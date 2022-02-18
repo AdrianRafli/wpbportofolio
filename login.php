@@ -58,11 +58,11 @@ if(isset($_POST['login'])){
                     <?php } ?>
                     <form action="" method="POST">
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Adrian">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Adrian" required>
                             <label for="username">Username</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                             <label for="password">Password</label>
                         </div>
                         <!-- <div class="col mb-4">

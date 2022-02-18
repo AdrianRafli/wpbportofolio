@@ -60,19 +60,19 @@ if (isset($_POST["update"])) {
                     <h2 class="text-center mb-5">Project Section</h2>
                     <form action="" method="POST">
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="judul" name="judul" placeholder="Adrian" value="<?=$vjudul?>">
+                            <input type="text" class="form-control" id="judul" name="judul" placeholder="Adrian" value="<?=$vjudul?>" required>
                             <label for="judul">Judul</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <textarea class="form-control" placeholder="Description" id="deskripsi" name="deskripsi"><?=$vdeskripsi?></textarea>
+                            <textarea class="form-control" placeholder="Description" id="deskripsi" name="deskripsi" required><?=$vdeskripsi?></textarea>
                             <label for="deskripsi">Deskripsi</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="website" name="website" placeholder="website" value="<?=$vwebsite?>">
+                            <input type="text" class="form-control" id="website" name="website" placeholder="website" value="<?=$vwebsite?>" required>
                             <label for="webiste">Website</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="github" name="github" placeholder="github" value="<?=$vgithub?>">
+                            <input type="text" class="form-control" id="github" name="github" placeholder="github" value="<?=$vgithub?>" required>
                             <label for="github">Github</label>
                         </div>
                         <div class="col mb-4">

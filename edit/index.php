@@ -83,15 +83,15 @@ if (isset($_POST["update"])) {
                     <?php } ?>
                     <form action="" method="post">
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Adrian" value="<?=$vnama?>">
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Adrian" value="<?=$vnama?>" required>
                             <label for="nama">Nama</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="title" name="title" placeholder="title" value="<?=$vtitle?>">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="title" value="<?=$vtitle?>" required>
                             <label for="title">Title</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <textarea class="form-control" placeholder="Description" id="tentang" name="tentang" rows="4" style="height: auto;"><?=$vtentang?></textarea>
+                            <textarea class="form-control" placeholder="Description" id="tentang" name="tentang" rows="4" style="height: auto;" required><?=$vtentang?></textarea>
                             <label for="tentang">About Me</label>
                         </div>
                         <div class="col mb-4">

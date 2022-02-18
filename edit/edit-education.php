@@ -58,15 +58,15 @@ if (isset($_POST["update"])) {
                     <h2 class="text-center mb-5">Education Section</h2>
                     <form action="" method="POST">
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="tahun" placeholder="tahun" name="tahun" value="<?=$vtahun?>">
+                            <input type="text" class="form-control" id="tahun" placeholder="tahun" name="tahun" value="<?=$vtahun?>" required>
                             <label for="tahun">Tahun</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="tingkat" placeholder="tingkat" name="tingkat" value="<?=$vtingkat?>">
+                            <input type="text" class="form-control" id="tingkat" placeholder="tingkat" name="tingkat" value="<?=$vtingkat?>" required>
                             <label for="tingkat">Tingkat</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <textarea class="form-control" placeholder="Description" id="deskripsi" name="deskripsi"><?=$vdeskripsi?></textarea>
+                            <textarea class="form-control" placeholder="Description" id="deskripsi" name="deskripsi" required><?=$vdeskripsi?></textarea>
                             <label for="deskripsi">Deskripsi</label>
                         </div>
                         <div class="col mb-4">

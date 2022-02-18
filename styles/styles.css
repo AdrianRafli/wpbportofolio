@@ -36,7 +36,7 @@ body {
 
 /* About Me */
 .about-me > .row {
-    height: 100vh;
+    min-height: 100vh;
 }
 .about-me-content > h2 {
     font-size: 3em;

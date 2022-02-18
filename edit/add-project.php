@@ -50,22 +50,22 @@ if (isset($_POST["submit"])) {
                     <form action="" method="POST">
                         <div class="col mb-3">
                             <label for="gambar" class="form-label">Upload Gambar</label>
-                            <input class="form-control" type="file" id="gambar" name="gambar">
+                            <input class="form-control" type="file" id="gambar" name="gambar" required>
                         </div>
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="judul" placeholder="Adrian" name="judul">
+                            <input type="text" class="form-control" id="judul" placeholder="Adrian" name="judul" required>
                             <label for="judul">Judul</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <textarea class="form-control" placeholder="Description" id="deksripsi" name="deskripsi"></textarea>
+                            <textarea class="form-control" placeholder="Description" id="deksripsi" name="deskripsi" required></textarea>
                             <label for="deskripsi">Deskripsi</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="website" name="website" placeholder="title">
+                            <input type="text" class="form-control" id="website" name="website" placeholder="title" required>
                             <label for="website">Website</label>
                         </div>
                         <div class="col form-floating mb-4">
-                            <input type="text" class="form-control" id="github" name="github" placeholder="title">
+                            <input type="text" class="form-control" id="github" name="github" placeholder="title" required>
                             <label for="github">Github</label>
                         </div>
                         <div class="col mb-4">
